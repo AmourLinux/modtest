@@ -2,6 +2,6 @@ package modtest
 
 import "fmt"
 
-func Hello(name string) string {
-	return fmt.Sprintf("Hello %s!!!", name)
+func Hello(name string) (string, error) {
+	return fmt.Sprintf("v2: Hello %s!!!", name), nil
 }
